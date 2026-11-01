@@ -1,0 +1,6 @@
+anomaly_id,anomaly_type,entity_type,entity_id,severity,description,injected_at
+ANOM-001,PREREQUISITE_VIOLATION,Recommendation,REC-2026-999901,HIGH,"Recommendation REC-2026-999901 for LRN-000091 violates prerequisite SKL-000003 (required 0.70, actual 0.00)",2026-11-01T04:05:32.070698+00:00
+ANOM-002,TIMESTAMP_ORDER_INVERSION,Attempt,ATT-999901,HIGH,Attempt ATT-999901 completed_at (2026-02-01 13:00) is earlier than started_at (2026-02-01 14:00),2026-11-01T04:05:32.079802+00:00
+ANOM-003,NONEXISTENT_SKILL_REFERENCE,ContentSkill,CNT-000001:SKL-999999,CRITICAL,ContentSkill references non-existent skill SKL-999999 for content CNT-000001,2026-11-01T04:05:32.079802+00:00
+ANOM-004,FUTURE_ATTEMPT_LEAKAGE,MasterySnapshot,SNP-999901,CRITICAL,Mastery snapshot SNP-999901 max_evidence_graded_at (2026-01-10) exceeds cutoff_timestamp (2026-01-01),2026-11-01T04:05:32.088618+00:00
+ANOM-005,LEARNING_PATH_LOOP,LearningPathItem,LPI-PATH-2026-000001-099,MEDIUM,Learning path PATH-2026-000001 re-schedules CNT-000030 at sequence 99 while sequence 1 is incomplete (IN_PROGRESS),2026-11-01T04:05:32.096856+00:00

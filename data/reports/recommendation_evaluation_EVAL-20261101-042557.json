@@ -1,0 +1,238 @@
+{
+  "evaluation_id": "EVAL-20261101-042557",
+  "generated_at": "2026-11-01T04:25:57.045573+00:00",
+  "dataset_profile": "development",
+  "database_target": "skillpath.db",
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "windows_evaluated": [
+    {
+      "cutoff": "2026-08-01T00:00:00",
+      "planned_end": "2026-08-31T00:00:00",
+      "actual_horizon": "2026-08-31T00:00:00",
+      "is_partially_observed": false,
+      "total_learners": 100,
+      "evaluated_learners": 63,
+      "excluded_learners": 37,
+      "cold_start_learners": 11,
+      "active_catalog_size": 100,
+      "metrics_by_k": {
+        "1": {
+          "k": 1,
+          "mean_precision": 0.0,
+          "mean_standard_recall": 0.0,
+          "mean_bounded_recall": 0.0,
+          "mean_ndcg": 0.0,
+          "catalog_coverage": 0.2,
+          "gini_coefficient": 0.893,
+          "evaluated_learners_count": 63,
+          "excluded_learners_count": 37
+        },
+        "3": {
+          "k": 3,
+          "mean_precision": 0.0423,
+          "mean_standard_recall": 0.0556,
+          "mean_bounded_recall": 0.0635,
+          "mean_ndcg": 0.0457,
+          "catalog_coverage": 0.32,
+          "gini_coefficient": 0.8805,
+          "evaluated_learners_count": 63,
+          "excluded_learners_count": 37
+        },
+        "5": {
+          "k": 5,
+          "mean_precision": 0.0317,
+          "mean_standard_recall": 0.0635,
+          "mean_bounded_recall": 0.0656,
+          "mean_ndcg": 0.0445,
+          "catalog_coverage": 0.4,
+          "gini_coefficient": 0.8728,
+          "evaluated_learners_count": 63,
+          "excluded_learners_count": 37
+        },
+        "10": {
+          "k": 10,
+          "mean_precision": 0.0317,
+          "mean_standard_recall": 0.1341,
+          "mean_bounded_recall": 0.1341,
+          "mean_ndcg": 0.067,
+          "catalog_coverage": 0.55,
+          "gini_coefficient": 0.8344,
+          "evaluated_learners_count": 63,
+          "excluded_learners_count": 37
+        }
+      },
+      "prerequisite_audit": {
+        "total_recommendations": 1000,
+        "compliant_recommendations": 1000,
+        "violations_count": 0,
+        "compliance_rate": 1.0,
+        "violations_details": []
+      },
+      "temporal_leakage_audit": {
+        "total_evaluations": 1000,
+        "leaking_evaluations": 0,
+        "leakage_rate": 0.0,
+        "leakage_details": []
+      }
+    },
+    {
+      "cutoff": "2026-09-01T00:00:00",
+      "planned_end": "2026-10-01T00:00:00",
+      "actual_horizon": "2026-10-01T00:00:00",
+      "is_partially_observed": false,
+      "total_learners": 100,
+      "evaluated_learners": 61,
+      "excluded_learners": 39,
+      "cold_start_learners": 11,
+      "active_catalog_size": 100,
+      "metrics_by_k": {
+        "1": {
+          "k": 1,
+          "mean_precision": 0.0164,
+          "mean_standard_recall": 0.0082,
+          "mean_bounded_recall": 0.0164,
+          "mean_ndcg": 0.0164,
+          "catalog_coverage": 0.2,
+          "gini_coefficient": 0.8916,
+          "evaluated_learners_count": 61,
+          "excluded_learners_count": 39
+        },
+        "3": {
+          "k": 3,
+          "mean_precision": 0.0055,
+          "mean_standard_recall": 0.0082,
+          "mean_bounded_recall": 0.0082,
+          "mean_ndcg": 0.0101,
+          "catalog_coverage": 0.33,
+          "gini_coefficient": 0.8785,
+          "evaluated_learners_count": 61,
+          "excluded_learners_count": 39
+        },
+        "5": {
+          "k": 5,
+          "mean_precision": 0.0066,
+          "mean_standard_recall": 0.0115,
+          "mean_bounded_recall": 0.0115,
+          "mean_ndcg": 0.0106,
+          "catalog_coverage": 0.39,
+          "gini_coefficient": 0.8685,
+          "evaluated_learners_count": 61,
+          "excluded_learners_count": 39
+        },
+        "10": {
+          "k": 10,
+          "mean_precision": 0.0213,
+          "mean_standard_recall": 0.0718,
+          "mean_bounded_recall": 0.0718,
+          "mean_ndcg": 0.0341,
+          "catalog_coverage": 0.55,
+          "gini_coefficient": 0.8253,
+          "evaluated_learners_count": 61,
+          "excluded_learners_count": 39
+        }
+      },
+      "prerequisite_audit": {
+        "total_recommendations": 1000,
+        "compliant_recommendations": 1000,
+        "violations_count": 0,
+        "compliance_rate": 1.0,
+        "violations_details": []
+      },
+      "temporal_leakage_audit": {
+        "total_evaluations": 1000,
+        "leaking_evaluations": 0,
+        "leakage_rate": 0.0,
+        "leakage_details": []
+      }
+    },
+    {
+      "cutoff": "2026-10-01T00:00:00",
+      "planned_end": "2026-10-31T00:00:00",
+      "actual_horizon": "2026-10-30T19:20:44",
+      "is_partially_observed": true,
+      "total_learners": 100,
+      "evaluated_learners": 66,
+      "excluded_learners": 34,
+      "cold_start_learners": 10,
+      "active_catalog_size": 100,
+      "metrics_by_k": {
+        "1": {
+          "k": 1,
+          "mean_precision": 0.0303,
+          "mean_standard_recall": 0.0114,
+          "mean_bounded_recall": 0.0303,
+          "mean_ndcg": 0.0303,
+          "catalog_coverage": 0.23,
+          "gini_coefficient": 0.88,
+          "evaluated_learners_count": 66,
+          "excluded_learners_count": 34
+        },
+        "3": {
+          "k": 3,
+          "mean_precision": 0.0354,
+          "mean_standard_recall": 0.0333,
+          "mean_bounded_recall": 0.0404,
+          "mean_ndcg": 0.0348,
+          "catalog_coverage": 0.36,
+          "gini_coefficient": 0.8731,
+          "evaluated_learners_count": 66,
+          "excluded_learners_count": 34
+        },
+        "5": {
+          "k": 5,
+          "mean_precision": 0.0273,
+          "mean_standard_recall": 0.0485,
+          "mean_bounded_recall": 0.0503,
+          "mean_ndcg": 0.0397,
+          "catalog_coverage": 0.41,
+          "gini_coefficient": 0.8641,
+          "evaluated_learners_count": 66,
+          "excluded_learners_count": 34
+        },
+        "10": {
+          "k": 10,
+          "mean_precision": 0.0348,
+          "mean_standard_recall": 0.1153,
+          "mean_bounded_recall": 0.1159,
+          "mean_ndcg": 0.0723,
+          "catalog_coverage": 0.57,
+          "gini_coefficient": 0.8203,
+          "evaluated_learners_count": 66,
+          "excluded_learners_count": 34
+        }
+      },
+      "prerequisite_audit": {
+        "total_recommendations": 1000,
+        "compliant_recommendations": 1000,
+        "violations_count": 0,
+        "compliance_rate": 1.0,
+        "violations_details": []
+      },
+      "temporal_leakage_audit": {
+        "total_evaluations": 1000,
+        "leaking_evaluations": 0,
+        "leakage_rate": 0.0,
+        "leakage_details": []
+      }
+    }
+  ],
+  "relevance_mapping_spec": {
+    "0": "Unobserved / Non-relevant (no completed interaction in outcome window)",
+    "1": "Engaged (completed content attempt in outcome window)",
+    "2": "Proficient (completed attempt with normalized score >= 0.70)",
+    "3": "Target Gap Closed (prior mastery < 0.70, assessment passed, and mastery improved)"
+  },
+  "methodology_and_limitations": [
+    "Temporal Isolation: Recommendations and historical mastery use evidence with timestamp <= T.",
+    "Fixed-K Precision: Denominator is strictly K, penalizing incomplete recommendation lists.",
+    "Primary Recall: Denominator is |Relevant|, bounded Recall reported as auxiliary.",
+    "Unobserved Interaction: Unobserved interaction reflects exposure limits, not proof of irrelevance.",
+    "Causality Disclaimer: Retrospective alignment measures predictive correlation, not causal lift.",
+    "Partially Observed Horizon: Windows extending past dataset max timestamp are flagged and bounded."
+  ]
+}

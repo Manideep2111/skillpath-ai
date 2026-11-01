@@ -1,0 +1,795 @@
+{
+  "evaluation_id": "EVAL-20261101-085640",
+  "generated_at": "2026-11-01T08:56:40.371704+00:00",
+  "dataset_profile": "development",
+  "database_target": "skillpath.db",
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "windows_evaluated": [
+    {
+      "cutoff": "2026-08-01T00:00:00",
+      "planned_end": "2026-08-31T00:00:00",
+      "actual_horizon": "2026-08-31T00:00:00",
+      "is_partially_observed": false,
+      "total_learners": 100,
+      "evaluated_learners": 63,
+      "excluded_learners": 37,
+      "cold_start_learners": 14,
+      "active_catalog_size": 100,
+      "metrics_by_k": {
+        "1": {
+          "k": 1,
+          "mean_precision": 0.0,
+          "mean_standard_recall": 0.0,
+          "mean_bounded_recall": 0.0,
+          "mean_ndcg": 0.0,
+          "catalog_coverage": 0.2,
+          "gini_coefficient": 0.893,
+          "evaluated_learners_count": 63,
+          "excluded_learners_count": 37,
+          "mean_realized_precision": 0.0,
+          "mean_observed_precision": null,
+          "mean_unobserved_exposure_rate": 1.0,
+          "mean_ndcg_ideal_pool": 0.0,
+          "stratified_disparity": {
+            "stratum_metrics": {
+              "low": 0.0,
+              "med": 0.0,
+              "high": 0.0
+            },
+            "stratum_sizes": {
+              "low": 36,
+              "med": 32,
+              "high": 32
+            },
+            "evaluated_stratum_sizes": {
+              "low": 11,
+              "med": 22,
+              "high": 30
+            },
+            "absolute_disparity": 0.0,
+            "ratio_disparity": null,
+            "diagnostic": "ZERO_MAX_METRIC"
+          }
+        },
+        "3": {
+          "k": 3,
+          "mean_precision": 0.0423,
+          "mean_standard_recall": 0.0556,
+          "mean_bounded_recall": 0.0635,
+          "mean_ndcg": 0.0457,
+          "catalog_coverage": 0.32,
+          "gini_coefficient": 0.8805,
+          "evaluated_learners_count": 63,
+          "excluded_learners_count": 37,
+          "mean_realized_precision": 0.0423,
+          "mean_observed_precision": 1.0,
+          "mean_unobserved_exposure_rate": 0.9577,
+          "mean_ndcg_ideal_pool": 0.0457,
+          "stratified_disparity": {
+            "stratum_metrics": {
+              "low": 0.0303030303030303,
+              "med": 0.045454545454545456,
+              "high": 0.04444444444444444
+            },
+            "stratum_sizes": {
+              "low": 36,
+              "med": 32,
+              "high": 32
+            },
+            "evaluated_stratum_sizes": {
+              "low": 11,
+              "med": 22,
+              "high": 30
+            },
+            "absolute_disparity": 0.0152,
+            "ratio_disparity": 0.6667,
+            "diagnostic": "DISPARITY_WARNING"
+          }
+        },
+        "5": {
+          "k": 5,
+          "mean_precision": 0.0317,
+          "mean_standard_recall": 0.0635,
+          "mean_bounded_recall": 0.0656,
+          "mean_ndcg": 0.0445,
+          "catalog_coverage": 0.4,
+          "gini_coefficient": 0.8728,
+          "evaluated_learners_count": 63,
+          "excluded_learners_count": 37,
+          "mean_realized_precision": 0.0317,
+          "mean_observed_precision": 1.0,
+          "mean_unobserved_exposure_rate": 0.9683,
+          "mean_ndcg_ideal_pool": 0.0445,
+          "stratified_disparity": {
+            "stratum_metrics": {
+              "low": 0.018181818181818184,
+              "med": 0.045454545454545456,
+              "high": 0.02666666666666667
+            },
+            "stratum_sizes": {
+              "low": 36,
+              "med": 32,
+              "high": 32
+            },
+            "evaluated_stratum_sizes": {
+              "low": 11,
+              "med": 22,
+              "high": 30
+            },
+            "absolute_disparity": 0.0273,
+            "ratio_disparity": 0.4,
+            "diagnostic": "DISPARITY_WARNING"
+          }
+        },
+        "10": {
+          "k": 10,
+          "mean_precision": 0.0317,
+          "mean_standard_recall": 0.1341,
+          "mean_bounded_recall": 0.1341,
+          "mean_ndcg": 0.067,
+          "catalog_coverage": 0.55,
+          "gini_coefficient": 0.8344,
+          "evaluated_learners_count": 63,
+          "excluded_learners_count": 37,
+          "mean_realized_precision": 0.0317,
+          "mean_observed_precision": 1.0,
+          "mean_unobserved_exposure_rate": 0.9683,
+          "mean_ndcg_ideal_pool": 0.067,
+          "stratified_disparity": {
+            "stratum_metrics": {
+              "low": 0.018181818181818184,
+              "med": 0.03636363636363636,
+              "high": 0.03333333333333333
+            },
+            "stratum_sizes": {
+              "low": 36,
+              "med": 32,
+              "high": 32
+            },
+            "evaluated_stratum_sizes": {
+              "low": 11,
+              "med": 22,
+              "high": 30
+            },
+            "absolute_disparity": 0.0182,
+            "ratio_disparity": 0.5,
+            "diagnostic": "DISPARITY_WARNING"
+          }
+        }
+      },
+      "prerequisite_audit": {
+        "total_recommendations": 1000,
+        "compliant_recommendations": 1000,
+        "violations_count": 0,
+        "compliance_rate": 1.0,
+        "violations_details": []
+      },
+      "temporal_leakage_audit": {
+        "total_evaluations": 1000,
+        "leaking_evaluations": 0,
+        "leakage_rate": 0.0,
+        "leakage_details": []
+      },
+      "cold_start_conversion": {
+        "total_cold_start": 14,
+        "active_cold_start": 0,
+        "converted_cold_start": 0,
+        "overall_conversion_rate": 0.0,
+        "conditional_conversion_rate": null,
+        "diagnostic": "NO_COLD_START_ATTEMPTS"
+      },
+      "observational_learning_gain": {
+        "pre_mastery": 0.702,
+        "post_mastery": 0.6293,
+        "learning_gain": -0.0578
+      },
+      "stratified_disparity": {
+        "stratum_metrics": {
+          "low": 0.018181818181818184,
+          "med": 0.045454545454545456,
+          "high": 0.02666666666666667
+        },
+        "stratum_sizes": {
+          "low": 36,
+          "med": 32,
+          "high": 32
+        },
+        "evaluated_stratum_sizes": {
+          "low": 11,
+          "med": 22,
+          "high": 30
+        },
+        "absolute_disparity": 0.0273,
+        "ratio_disparity": 0.4,
+        "diagnostic": "DISPARITY_WARNING"
+      },
+      "anomaly_audits": {
+        "total_audits": 5,
+        "all_passed": true,
+        "audits": {
+          "prerequisite_compliance": {
+            "audit_name": "PREREQUISITE_COMPLIANCE",
+            "anomaly_type": "PREREQUISITE_VIOLATION",
+            "passed": true,
+            "total_checked": 1000,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {
+              "cutoff": "2026-08-01T00:00:00"
+            }
+          },
+          "timestamp_ordering": {
+            "audit_name": "TIMESTAMP_ORDERING",
+            "anomaly_type": "TIMESTAMP_ORDER_INVERSION",
+            "passed": true,
+            "total_checked": 2000,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {}
+          },
+          "orphaned_content_skills": {
+            "audit_name": "ORPHANED_CONTENT_SKILLS",
+            "anomaly_type": "NONEXISTENT_SKILL_REFERENCE",
+            "passed": true,
+            "total_checked": 193,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {}
+          },
+          "future_mastery_leakage": {
+            "audit_name": "FUTURE_MASTERY_LEAKAGE",
+            "anomaly_type": "FUTURE_ATTEMPT_LEAKAGE",
+            "passed": true,
+            "total_checked": 1000,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {}
+          },
+          "learning_path_loops": {
+            "audit_name": "LEARNING_PATH_LOOPS",
+            "anomaly_type": "LEARNING_PATH_LOOP",
+            "passed": true,
+            "total_checked": 699,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {
+              "methodology_note": "Detects sequential duplicate assignments of incomplete content and direct mutual prerequisite cycles."
+            }
+          }
+        }
+      }
+    },
+    {
+      "cutoff": "2026-09-01T00:00:00",
+      "planned_end": "2026-10-01T00:00:00",
+      "actual_horizon": "2026-10-01T00:00:00",
+      "is_partially_observed": false,
+      "total_learners": 100,
+      "evaluated_learners": 61,
+      "excluded_learners": 39,
+      "cold_start_learners": 14,
+      "active_catalog_size": 100,
+      "metrics_by_k": {
+        "1": {
+          "k": 1,
+          "mean_precision": 0.0164,
+          "mean_standard_recall": 0.0082,
+          "mean_bounded_recall": 0.0164,
+          "mean_ndcg": 0.0164,
+          "catalog_coverage": 0.2,
+          "gini_coefficient": 0.8916,
+          "evaluated_learners_count": 61,
+          "excluded_learners_count": 39,
+          "mean_realized_precision": 0.0164,
+          "mean_observed_precision": 1.0,
+          "mean_unobserved_exposure_rate": 0.9836,
+          "mean_ndcg_ideal_pool": 0.0164,
+          "stratified_disparity": {
+            "stratum_metrics": {
+              "low": 0.0,
+              "med": 0.0,
+              "high": 0.03225806451612903
+            },
+            "stratum_sizes": {
+              "low": 35,
+              "med": 33,
+              "high": 32
+            },
+            "evaluated_stratum_sizes": {
+              "low": 8,
+              "med": 22,
+              "high": 31
+            },
+            "absolute_disparity": 0.0323,
+            "ratio_disparity": 0.0,
+            "diagnostic": "DISPARITY_WARNING"
+          }
+        },
+        "3": {
+          "k": 3,
+          "mean_precision": 0.0055,
+          "mean_standard_recall": 0.0082,
+          "mean_bounded_recall": 0.0082,
+          "mean_ndcg": 0.0101,
+          "catalog_coverage": 0.33,
+          "gini_coefficient": 0.8785,
+          "evaluated_learners_count": 61,
+          "excluded_learners_count": 39,
+          "mean_realized_precision": 0.0055,
+          "mean_observed_precision": 1.0,
+          "mean_unobserved_exposure_rate": 0.9945,
+          "mean_ndcg_ideal_pool": 0.0101,
+          "stratified_disparity": {
+            "stratum_metrics": {
+              "low": 0.0,
+              "med": 0.0,
+              "high": 0.01075268817204301
+            },
+            "stratum_sizes": {
+              "low": 35,
+              "med": 33,
+              "high": 32
+            },
+            "evaluated_stratum_sizes": {
+              "low": 8,
+              "med": 22,
+              "high": 31
+            },
+            "absolute_disparity": 0.0108,
+            "ratio_disparity": 0.0,
+            "diagnostic": "DISPARITY_WARNING"
+          }
+        },
+        "5": {
+          "k": 5,
+          "mean_precision": 0.0066,
+          "mean_standard_recall": 0.0115,
+          "mean_bounded_recall": 0.0115,
+          "mean_ndcg": 0.0106,
+          "catalog_coverage": 0.39,
+          "gini_coefficient": 0.8685,
+          "evaluated_learners_count": 61,
+          "excluded_learners_count": 39,
+          "mean_realized_precision": 0.0066,
+          "mean_observed_precision": 1.0,
+          "mean_unobserved_exposure_rate": 0.9934,
+          "mean_ndcg_ideal_pool": 0.0106,
+          "stratified_disparity": {
+            "stratum_metrics": {
+              "low": 0.0,
+              "med": 0.0,
+              "high": 0.012903225806451613
+            },
+            "stratum_sizes": {
+              "low": 35,
+              "med": 33,
+              "high": 32
+            },
+            "evaluated_stratum_sizes": {
+              "low": 8,
+              "med": 22,
+              "high": 31
+            },
+            "absolute_disparity": 0.0129,
+            "ratio_disparity": 0.0,
+            "diagnostic": "DISPARITY_WARNING"
+          }
+        },
+        "10": {
+          "k": 10,
+          "mean_precision": 0.0213,
+          "mean_standard_recall": 0.0718,
+          "mean_bounded_recall": 0.0718,
+          "mean_ndcg": 0.0341,
+          "catalog_coverage": 0.55,
+          "gini_coefficient": 0.8253,
+          "evaluated_learners_count": 61,
+          "excluded_learners_count": 39,
+          "mean_realized_precision": 0.0213,
+          "mean_observed_precision": 1.0,
+          "mean_unobserved_exposure_rate": 0.9787,
+          "mean_ndcg_ideal_pool": 0.0341,
+          "stratified_disparity": {
+            "stratum_metrics": {
+              "low": 0.0125,
+              "med": 0.009090909090909092,
+              "high": 0.03225806451612903
+            },
+            "stratum_sizes": {
+              "low": 35,
+              "med": 33,
+              "high": 32
+            },
+            "evaluated_stratum_sizes": {
+              "low": 8,
+              "med": 22,
+              "high": 31
+            },
+            "absolute_disparity": 0.0232,
+            "ratio_disparity": 0.2818,
+            "diagnostic": "DISPARITY_WARNING"
+          }
+        }
+      },
+      "prerequisite_audit": {
+        "total_recommendations": 1000,
+        "compliant_recommendations": 1000,
+        "violations_count": 0,
+        "compliance_rate": 1.0,
+        "violations_details": []
+      },
+      "temporal_leakage_audit": {
+        "total_evaluations": 1000,
+        "leaking_evaluations": 0,
+        "leakage_rate": 0.0,
+        "leakage_details": []
+      },
+      "cold_start_conversion": {
+        "total_cold_start": 14,
+        "active_cold_start": 1,
+        "converted_cold_start": 1,
+        "overall_conversion_rate": 0.07142857142857142,
+        "conditional_conversion_rate": 1.0,
+        "diagnostic": null
+      },
+      "observational_learning_gain": {
+        "pre_mastery": 0.6662,
+        "post_mastery": 0.6271,
+        "learning_gain": -0.0113
+      },
+      "stratified_disparity": {
+        "stratum_metrics": {
+          "low": 0.0,
+          "med": 0.0,
+          "high": 0.012903225806451613
+        },
+        "stratum_sizes": {
+          "low": 35,
+          "med": 33,
+          "high": 32
+        },
+        "evaluated_stratum_sizes": {
+          "low": 8,
+          "med": 22,
+          "high": 31
+        },
+        "absolute_disparity": 0.0129,
+        "ratio_disparity": 0.0,
+        "diagnostic": "DISPARITY_WARNING"
+      },
+      "anomaly_audits": {
+        "total_audits": 5,
+        "all_passed": true,
+        "audits": {
+          "prerequisite_compliance": {
+            "audit_name": "PREREQUISITE_COMPLIANCE",
+            "anomaly_type": "PREREQUISITE_VIOLATION",
+            "passed": true,
+            "total_checked": 1000,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {
+              "cutoff": "2026-09-01T00:00:00"
+            }
+          },
+          "timestamp_ordering": {
+            "audit_name": "TIMESTAMP_ORDERING",
+            "anomaly_type": "TIMESTAMP_ORDER_INVERSION",
+            "passed": true,
+            "total_checked": 2000,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {}
+          },
+          "orphaned_content_skills": {
+            "audit_name": "ORPHANED_CONTENT_SKILLS",
+            "anomaly_type": "NONEXISTENT_SKILL_REFERENCE",
+            "passed": true,
+            "total_checked": 193,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {}
+          },
+          "future_mastery_leakage": {
+            "audit_name": "FUTURE_MASTERY_LEAKAGE",
+            "anomaly_type": "FUTURE_ATTEMPT_LEAKAGE",
+            "passed": true,
+            "total_checked": 1000,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {}
+          },
+          "learning_path_loops": {
+            "audit_name": "LEARNING_PATH_LOOPS",
+            "anomaly_type": "LEARNING_PATH_LOOP",
+            "passed": true,
+            "total_checked": 699,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {
+              "methodology_note": "Detects sequential duplicate assignments of incomplete content and direct mutual prerequisite cycles."
+            }
+          }
+        }
+      }
+    },
+    {
+      "cutoff": "2026-10-01T00:00:00",
+      "planned_end": "2026-10-31T00:00:00",
+      "actual_horizon": "2026-10-30T19:20:44",
+      "is_partially_observed": true,
+      "total_learners": 100,
+      "evaluated_learners": 66,
+      "excluded_learners": 34,
+      "cold_start_learners": 13,
+      "active_catalog_size": 100,
+      "metrics_by_k": {
+        "1": {
+          "k": 1,
+          "mean_precision": 0.0303,
+          "mean_standard_recall": 0.0114,
+          "mean_bounded_recall": 0.0303,
+          "mean_ndcg": 0.0303,
+          "catalog_coverage": 0.23,
+          "gini_coefficient": 0.88,
+          "evaluated_learners_count": 66,
+          "excluded_learners_count": 34,
+          "mean_realized_precision": 0.0303,
+          "mean_observed_precision": 1.0,
+          "mean_unobserved_exposure_rate": 0.9697,
+          "mean_ndcg_ideal_pool": 0.0303,
+          "stratified_disparity": {
+            "stratum_metrics": {
+              "low": 0.0,
+              "med": 0.0,
+              "high": 0.06896551724137931
+            },
+            "stratum_sizes": {
+              "low": 35,
+              "med": 35,
+              "high": 30
+            },
+            "evaluated_stratum_sizes": {
+              "low": 11,
+              "med": 26,
+              "high": 29
+            },
+            "absolute_disparity": 0.069,
+            "ratio_disparity": 0.0,
+            "diagnostic": "DISPARITY_WARNING"
+          }
+        },
+        "3": {
+          "k": 3,
+          "mean_precision": 0.0354,
+          "mean_standard_recall": 0.0333,
+          "mean_bounded_recall": 0.0404,
+          "mean_ndcg": 0.0348,
+          "catalog_coverage": 0.36,
+          "gini_coefficient": 0.8731,
+          "evaluated_learners_count": 66,
+          "excluded_learners_count": 34,
+          "mean_realized_precision": 0.0354,
+          "mean_observed_precision": 1.0,
+          "mean_unobserved_exposure_rate": 0.9646,
+          "mean_ndcg_ideal_pool": 0.0348,
+          "stratified_disparity": {
+            "stratum_metrics": {
+              "low": 0.0,
+              "med": 0.02564102564102564,
+              "high": 0.057471264367816084
+            },
+            "stratum_sizes": {
+              "low": 35,
+              "med": 35,
+              "high": 30
+            },
+            "evaluated_stratum_sizes": {
+              "low": 11,
+              "med": 26,
+              "high": 29
+            },
+            "absolute_disparity": 0.0575,
+            "ratio_disparity": 0.0,
+            "diagnostic": "DISPARITY_WARNING"
+          }
+        },
+        "5": {
+          "k": 5,
+          "mean_precision": 0.0273,
+          "mean_standard_recall": 0.0485,
+          "mean_bounded_recall": 0.0503,
+          "mean_ndcg": 0.0397,
+          "catalog_coverage": 0.41,
+          "gini_coefficient": 0.8641,
+          "evaluated_learners_count": 66,
+          "excluded_learners_count": 34,
+          "mean_realized_precision": 0.0273,
+          "mean_observed_precision": 1.0,
+          "mean_unobserved_exposure_rate": 0.9727,
+          "mean_ndcg_ideal_pool": 0.0397,
+          "stratified_disparity": {
+            "stratum_metrics": {
+              "low": 0.0,
+              "med": 0.02307692307692308,
+              "high": 0.041379310344827586
+            },
+            "stratum_sizes": {
+              "low": 35,
+              "med": 35,
+              "high": 30
+            },
+            "evaluated_stratum_sizes": {
+              "low": 11,
+              "med": 26,
+              "high": 29
+            },
+            "absolute_disparity": 0.0414,
+            "ratio_disparity": 0.0,
+            "diagnostic": "DISPARITY_WARNING"
+          }
+        },
+        "10": {
+          "k": 10,
+          "mean_precision": 0.0348,
+          "mean_standard_recall": 0.1153,
+          "mean_bounded_recall": 0.1159,
+          "mean_ndcg": 0.0723,
+          "catalog_coverage": 0.57,
+          "gini_coefficient": 0.8203,
+          "evaluated_learners_count": 66,
+          "excluded_learners_count": 34,
+          "mean_realized_precision": 0.0348,
+          "mean_observed_precision": 1.0,
+          "mean_unobserved_exposure_rate": 0.9652,
+          "mean_ndcg_ideal_pool": 0.0723,
+          "stratified_disparity": {
+            "stratum_metrics": {
+              "low": 0.009090909090909092,
+              "med": 0.015384615384615385,
+              "high": 0.062068965517241385
+            },
+            "stratum_sizes": {
+              "low": 35,
+              "med": 35,
+              "high": 30
+            },
+            "evaluated_stratum_sizes": {
+              "low": 11,
+              "med": 26,
+              "high": 29
+            },
+            "absolute_disparity": 0.053,
+            "ratio_disparity": 0.1465,
+            "diagnostic": "DISPARITY_WARNING"
+          }
+        }
+      },
+      "prerequisite_audit": {
+        "total_recommendations": 1000,
+        "compliant_recommendations": 1000,
+        "violations_count": 0,
+        "compliance_rate": 1.0,
+        "violations_details": []
+      },
+      "temporal_leakage_audit": {
+        "total_evaluations": 1000,
+        "leaking_evaluations": 0,
+        "leakage_rate": 0.0,
+        "leakage_details": []
+      },
+      "cold_start_conversion": {
+        "total_cold_start": 13,
+        "active_cold_start": 0,
+        "converted_cold_start": 0,
+        "overall_conversion_rate": 0.0,
+        "conditional_conversion_rate": null,
+        "diagnostic": "NO_COLD_START_ATTEMPTS"
+      },
+      "observational_learning_gain": {
+        "pre_mastery": 0.641,
+        "post_mastery": 0.6168,
+        "learning_gain": 0.0039
+      },
+      "stratified_disparity": {
+        "stratum_metrics": {
+          "low": 0.0,
+          "med": 0.02307692307692308,
+          "high": 0.041379310344827586
+        },
+        "stratum_sizes": {
+          "low": 35,
+          "med": 35,
+          "high": 30
+        },
+        "evaluated_stratum_sizes": {
+          "low": 11,
+          "med": 26,
+          "high": 29
+        },
+        "absolute_disparity": 0.0414,
+        "ratio_disparity": 0.0,
+        "diagnostic": "DISPARITY_WARNING"
+      },
+      "anomaly_audits": {
+        "total_audits": 5,
+        "all_passed": true,
+        "audits": {
+          "prerequisite_compliance": {
+            "audit_name": "PREREQUISITE_COMPLIANCE",
+            "anomaly_type": "PREREQUISITE_VIOLATION",
+            "passed": true,
+            "total_checked": 1000,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {
+              "cutoff": "2026-10-01T00:00:00"
+            }
+          },
+          "timestamp_ordering": {
+            "audit_name": "TIMESTAMP_ORDERING",
+            "anomaly_type": "TIMESTAMP_ORDER_INVERSION",
+            "passed": true,
+            "total_checked": 2000,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {}
+          },
+          "orphaned_content_skills": {
+            "audit_name": "ORPHANED_CONTENT_SKILLS",
+            "anomaly_type": "NONEXISTENT_SKILL_REFERENCE",
+            "passed": true,
+            "total_checked": 193,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {}
+          },
+          "future_mastery_leakage": {
+            "audit_name": "FUTURE_MASTERY_LEAKAGE",
+            "anomaly_type": "FUTURE_ATTEMPT_LEAKAGE",
+            "passed": true,
+            "total_checked": 1000,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {}
+          },
+          "learning_path_loops": {
+            "audit_name": "LEARNING_PATH_LOOPS",
+            "anomaly_type": "LEARNING_PATH_LOOP",
+            "passed": true,
+            "total_checked": 699,
+            "violations_count": 0,
+            "details": [],
+            "metadata": {
+              "methodology_note": "Detects sequential duplicate assignments of incomplete content and direct mutual prerequisite cycles."
+            }
+          }
+        }
+      }
+    }
+  ],
+  "relevance_mapping_spec": {
+    "0": "Unobserved / Non-relevant (no completed interaction in outcome window)",
+    "1": "Engaged (completed content attempt in outcome window)",
+    "2": "Proficient (completed attempt with normalized score >= 0.70)",
+    "3": "Target Gap Closed (prior mastery < 0.70, assessment passed, and mastery improved)"
+  },
+  "methodology_and_limitations": [
+    "Temporal Isolation: Recommendations and historical mastery use evidence with timestamp <= T.",
+    "Fixed-K Precision: Denominator is strictly K, penalizing incomplete recommendation lists.",
+    "Realized Precision: Denominator is realized list length min(K, |recs|), accounting for prerequisite gating.",
+    "External Ideal Pool NDCG: IDCG computed from complete outcome-window engagement pool.",
+    "Observational Learning Gain: Hake-normalized delta evaluated using earliest post-cutoff assessment.",
+    "Cold-Start Conversion: Evaluates conversion into active, proficient learners without prior history.",
+    "Stratified Activity Disparity: Audits relative and absolute equity across low, med, high activity strata.",
+    "Primary Recall: Denominator is |Relevant|, bounded Recall reported as auxiliary.",
+    "Unobserved Interaction: Unobserved interaction reflects exposure limits, not proof of irrelevance.",
+    "Causality Disclaimer: Retrospective alignment measures predictive correlation, not causal lift.",
+    "Partially Observed Horizon: Windows extending past dataset max timestamp are flagged and bounded."
+  ]
+}
